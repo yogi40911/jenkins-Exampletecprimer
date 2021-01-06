@@ -5,8 +5,7 @@ pipeline {
         stage('Build stage'){            
             steps{
                 sh 'mvn package'
-                def mavenhome= tool name: 'Maven3', type: 'maven'
-                sh '{mavenhome}/bin/mvn package'
+                
             }
         }
         stage ('Compile Stage') {
